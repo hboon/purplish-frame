@@ -8,11 +8,11 @@ For iOS & OS X:
 CGSize.new(100, 100).scale_to_fit(CGSize.new(10, 10))
 #CGSize.new(10, 10)
 
-CGSizeMake(200, 100).scale_to_fill(CGSizeMake(15, 15))
-#CGSizeMake(30, 15)
+CGSize.new(200, 100).scale_to_fill(CGSize.new(15, 15))
+#CGSize.new(30, 15)
 
 CGSize.new(100, 100).scale_to_fit!
-CGSizeMake(200, 100).scale_to_fill!
+CGSize.new(200, 100).scale_to_fill!
 
 CGPoint.new(100, 200)*10
 #CGPoint.new(1000, 2000)
@@ -24,7 +24,7 @@ CGRect.new(10, 20, 100, 100).scale(10)
 #CGRect.new(100, 200, 1000, 1000)
 ```
 
-Similar usage for NSSize, NSPoint, NSRect.
+Similar usage for NSSize, NSPoint, NSRect on OS X.
 
 Installation
 ---
