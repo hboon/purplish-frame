@@ -5,6 +5,24 @@ Usage
 For iOS & OS X:
 
 ```ruby
+rect = CGRect.new(10, -20, 100, 100)
+rect.left
+#10
+rect.right
+#110
+rect.top
+#-20
+rect.bottom
+#80
+rect.width
+#100
+rect.height
+#100
+rect.center_x
+#60
+rect.center_y
+#30
+
 CGSize.new(100, 100).scale_to_fit(CGSize.new(10, 10))
 #CGSize.new(10, 10)
 
