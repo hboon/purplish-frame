@@ -22,7 +22,11 @@ rect.center_x
 #60
 rect.center_y
 #30
+```
 
+Similar usage for UIView for iOS and NSView, NSSize, NSPoint, NSRect for OS X.
+
+```ruby
 CGSize.new(100, 100).scale_to_fit(CGSize.new(10, 10))
 #CGSize.new(10, 10)
 
