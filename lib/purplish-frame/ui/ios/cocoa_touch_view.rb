@@ -1,6 +1,6 @@
 module PurplishFrame
   module CocoaTouchView
-    include View
+    include PurplishFrame::View
 
     def top
       view_frame.origin.y

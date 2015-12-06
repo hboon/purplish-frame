@@ -1,6 +1,6 @@
 module PurplishFrame
   module CocoaView
-    include View
+    include PurplishFrame::View
 
     def view_frame
       frame
