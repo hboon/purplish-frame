@@ -5,52 +5,52 @@ Usage
 For iOS & OS X:
 
 ```ruby
-rect = CGRect.new(10, -20, 100, 100)
+rect = CGRectMake(10, -20, 100, 100)
 rect.left
-#10
+=> #10
 rect.right
-#110
+=> #110
 rect.top
-#-20
+=> #-20
 rect.bottom
-#80
+=> #80
 rect.width
-#100
+=> #100
 rect.height
-#100
+=> #100
 rect.center_x
-#60
+=> #60
 rect.center_y
-#30
+=> #30
 ```
 
 Similar usage for UIView for iOS and NSView, NSSize, NSPoint, NSRect for OS X.
 
 ```ruby
-rect = CGRect.new(10, -20, 100, 100)
+rect = CGRectMake(10, -20, 100, 100)
 rect.inset(5, 20)
-#<CGRect origin=#<ATSPoint x=15.0 y=0.0> size=#<CGSize width=90.0 height=60.0>>
+=> #<CGRect origin=#<CGPoint x=15.0 y=0.0> size=#<CGSize width=90.0 height=60.0>>
 ```
 Similar usage for UIView for iOS and NSView, NSRect for OS X.
 
 ```ruby
 CGSize.new(100, 100).scale_to_fit(CGSize.new(10, 10))
-#CGSize.new(10, 10)
+=> #<CGSize width=10.0 height=10>
 
 CGSize.new(200, 100).scale_to_fill(CGSize.new(15, 15))
-#CGSize.new(30, 15)
+=> #<CGSize width=30 height=15>
 
 CGSize.new(100, 100).scale_to_fit!
 CGSize.new(200, 100).scale_to_fill!
 
 CGPoint.new(100, 200)*10
-#CGPoint.new(1000, 2000)
+=> #<CGPoint x=1000 y=2000>
 
 CGPoint.new(100, 200)/10
-#CGPoint.new(10, 20)
+=> #<CGPoint x=10 y=20>
 
-CGRect.new(10, 20, 100, 100).scale(10)
-#CGRect.new(100, 200, 1000, 1000)
+CGRectMake(10, 20, 100, 100).scale(10)
+=> #<CGRect origin=#<CGPoint x=100.0 y=200.0> size=#<CGSize width=1000.0 height=1000.0>>
 ```
 
 Similar usage for NSSize, NSPoint, NSRect on OS X.
