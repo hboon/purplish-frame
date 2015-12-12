@@ -6,6 +6,8 @@ end
 
 if PurplishFrame.osx?
   describe "Rects" do
+    delta = 0.0001
+
     it "NSRect sides" do
       #Careful not to use NSMakeRect(). Somehow, it creates a CGRect instead
       rect = NSRect.new([10, -20], [100, 100])
@@ -17,6 +19,14 @@ if PurplishFrame.osx?
       rect.height.should.equal 100
       rect.center_x.should.equal 60
       rect.center_y.should.equal 30
+    end
+
+    it "Insets" do
+      #Careful not to use NSMakeRect(). Somehow, it creates a CGRect instead
+      rect = NSRect.new([10, -20], [100, 100])
+      rect.inset(10, 10).should.close NSRect.new([20, -10], [80, 80]), delta
+      rect.inset(5, 20).should.close NSRect.new([15, 0], [90, 60]), delta
+      rect.inset(-5, -20).should.close NSRect.new([5, -40], [110, 140]), delta
     end
   end
 end

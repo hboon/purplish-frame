@@ -28,4 +28,10 @@ describe "Rects" do
     rect.center_y.should.equal 30
   end
 
+  it "Insets" do
+    rect = CGRectMake(10, -20, 100, 100)
+    rect.inset(10, 10).should.close CGRectMake(20, -10, 80, 80), delta
+    rect.inset(5, 20).should.close CGRectMake(15, 0, 90, 60), delta
+    rect.inset(-5, -20).should.close CGRectMake(5, -40, 110, 140), delta
+  end
 end

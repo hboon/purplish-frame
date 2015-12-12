@@ -27,6 +27,13 @@ rect.center_y
 Similar usage for UIView for iOS and NSView, NSSize, NSPoint, NSRect for OS X.
 
 ```ruby
+rect = CGRect.new(10, -20, 100, 100)
+rect.inset(5, 20)
+#<CGRect origin=#<ATSPoint x=15.0 y=0.0> size=#<CGSize width=90.0 height=60.0>>
+```
+Similar usage for UIView for iOS and NSView, NSRect for OS X.
+
+```ruby
 CGSize.new(100, 100).scale_to_fit(CGSize.new(10, 10))
 #CGSize.new(10, 10)
 

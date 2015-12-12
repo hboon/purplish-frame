@@ -28,4 +28,8 @@ class CGRect
   def height=(h)
     size.height = h
   end
+
+  def inset(dx, dy)
+    CGRectInset(self, dx, dy)
+  end
 end

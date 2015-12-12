@@ -95,5 +95,9 @@ module PurplishFrame
       size_height_to_fit
       self.height = f if height < f
     end
+
+    def inset!(dx, dy)
+      self.frame = frame.inset(dx, dy)
+    end
   end
 end
