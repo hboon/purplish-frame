@@ -38,5 +38,6 @@ Motion::Project::App.setup do |app|
     dependencies["#{core_lib}/non-ui/ios/ui_image.rb"] = ["#{core_lib}/non-ui/has_size_width_height.rb"]
   end
   dependencies["#{core_lib}/non-ui/cg_size.rb"] = ["#{core_lib}/non-ui/can_scale_width_height.rb"]
+  dependencies["#{core_lib}/ui/ca_layer.rb"] = ["#{core_lib}/ui/view.rb"]
   app.files_dependencies(dependencies)
 end
