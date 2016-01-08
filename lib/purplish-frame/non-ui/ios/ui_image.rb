@@ -1,3 +1,3 @@
-class NSImage
+class UIImage
   include PurplishFrame::HasSizeWidthHeight
 end
