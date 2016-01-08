@@ -55,6 +55,16 @@ CGRectMake(10, 20, 100, 100).scale(10)
 
 Similar usage for NSSize, NSPoint, NSRect on OS X.
 
+```ruby
+img = UIImage.imageNamed('someImage')
+img.width
+=> 20.0
+img.height
+=> 30.0
+```
+
+Similar usage for NSImage.
+
 Installation
 ---
 1. Add this to your `Gemfile`: `gem 'purplish-frame'`
