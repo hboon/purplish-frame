@@ -34,6 +34,16 @@ module PurplishFrame
       self.left = center_x-size.width/2
     end
 
+    def center
+      [center_x, center_y]
+    end
+
+    def center=(pt)
+      pt = pt.to_point
+      self.center_x = pt.x
+      self.center_y = pt.y
+    end
+
     def width
       size.width
     end
