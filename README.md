@@ -7,21 +7,21 @@ For iOS & OS X:
 ```ruby
 rect = CGRectMake(10, -20, 100, 100)
 rect.left
-=> #10
+=> 10
 rect.right
-=> #110
+=> 110
 rect.top
-=> #-20
+=> -20
 rect.bottom
-=> #80
+=> 80
 rect.width
-=> #100
+=> 100
 rect.height
-=> #100
+=> 100
 rect.center_x
-=> #60
+=> 60
 rect.center_y
-=> #30
+=> 30
 rect.center
 => {60, 30}
 => #<CGPoint x=60.0 y=2.0>
