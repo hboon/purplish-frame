@@ -22,6 +22,9 @@ rect.center_x
 => #60
 rect.center_y
 => #30
+rect.center
+=> {60, 30}
+=> #<CGPoint x=60.0 y=2.0>
 ```
 
 Similar usage for UIView for iOS and NSView, NSSize, NSPoint, NSRect for OS X, CALayer for both platforms.
