@@ -45,5 +45,37 @@ module PurplishFrame
     def height
       size.height
     end
+
+    def top_left
+      [left, top].to_point
+    end
+
+    def top_right
+      [right, top].to_point
+    end
+
+    def bottom_left
+      [left, bottom].to_point
+    end
+
+    def bottom_right
+      [right, bottom].to_point
+    end
+
+    def top_center
+      [center_x, top].to_point
+    end
+
+    def bottom_center
+      [center_x, bottom].to_point
+    end
+
+    def left_center
+      [left, center_y].to_point
+    end
+
+    def right_center
+      [right, center_y].to_point
+    end
   end
 end
