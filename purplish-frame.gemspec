@@ -4,7 +4,7 @@ require File.expand_path('../lib/purplish-frame/version.rb', __FILE__)
 Gem::Specification.new do |gem|
   gem.name          = 'purplish-frame'
   gem.version       = PurplishFrame::VERSION
-  gem.licenses      = ['BSD']
+  gem.licenses      = ['BSD-2-Clause']
 
   gem.authors  = ['Hwee-Boon Yar']
 
