@@ -29,7 +29,7 @@ class NSRect
     size.height = h
   end
 
-  def inset(dx, dy)
+  def inset(dx, dy=dx)
     NSInsetRect(self, dx, dy)
   end
 end
